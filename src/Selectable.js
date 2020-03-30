@@ -8,9 +8,7 @@ const getRows = (number) => {
     const cells = []
     for (let j = 0; j < 30; j++) {
       cells.push(
-        <li className="ui-state-default" key={j} data-id={index + j}>
-          <Cells number={index + j} />
-        </li>
+        <Cells number={index + j} key={index + j} />
       )
     }
     items.push(
