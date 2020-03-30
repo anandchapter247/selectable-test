@@ -12,9 +12,9 @@ const getRows = (number) => {
       )
     }
     items.push(
-      <ul className="selectable" key={index} >
+      <tr key={index}>
         {cells}
-      </ul>
+      </tr>
     )
   }
   return items
