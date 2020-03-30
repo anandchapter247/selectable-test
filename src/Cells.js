@@ -2,10 +2,9 @@ import React from 'react'
 import { createSelectable } from 'react-selectable-fast';
 
 const Cells = ({ selectableRef, isSelected, isSelecting, number }) => (
-  // <td ref={selectableRef}>
-  <div > Cells { number}</div >
-  // </td>
+  <td ref={selectableRef}>
+    <div > Cells {number}</div >
+  </td>
 );
 
-// export default createSelectable(Cells);
-export default Cells;
+export default createSelectable(Cells);
